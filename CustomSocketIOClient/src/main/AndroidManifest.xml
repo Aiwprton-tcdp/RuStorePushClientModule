@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application>
+        <activity
+            android:name="ru.aiwprton.customsocketioclient.SocketClientActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <service
+            android:name="ru.aiwprton.customsocketioclient.SocketClientService"
+            android:enabled="true"
+            android:exported="true"
+            tools:ignore="ExportedService,MissingClass" />
+    </application>
+
+</manifest>
